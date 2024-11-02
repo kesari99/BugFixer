@@ -3,11 +3,11 @@ const Form = ({type, post, setPost, submitting, handleSubmit}) => {
   return (
     <section className='w-full max-w-full flex-start flex-col'>
       <h1 className='head_text text-left'>
-        <span className='blue_gradient'>{type} Post</span>
+        <span className='blue_gradient'>{type} Bug</span>
         
       </h1>
       <p className='desc text-left max-w-md'> 
-        {type} and share amazing prompts with world, and let your imagination run wild with any AI powered platform
+        {type} your Bugs and deploy in this free open source website and let others know about the issues.
 
       </p>
 
@@ -17,13 +17,13 @@ const Form = ({type, post, setPost, submitting, handleSubmit}) => {
       >
         <label>
           <span className='font-satoshi font-semibold text-base text-gray-700'>
-            Your AI prompt
+            Your Bug Description
           </span>
 
           <textarea
            value={post.prompt}
            onChange={(e) => setPost({...post, prompt: e.target.value})}
-           placeholder='Write your prompt here'
+           placeholder='Write your Bug here'
            required 
            className="form_textarea"
           
@@ -36,7 +36,7 @@ const Form = ({type, post, setPost, submitting, handleSubmit}) => {
         <label>
           <span className='font-satoshi font-semibold text-base text-gray-700'>
             Tag {' '}
-            <span className='font-normal'>(#product, #web development, #idea)</span>
+            <span className='font-normal'>(#product, #web development, #security)</span>
           </span>
 
           <input

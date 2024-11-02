@@ -4,8 +4,8 @@ import Nav from '@components/Nav'
 import Provider from  '@components/Provider'
 
 export const metadata = {
-    title : "Promtopia",
-    description : "Discover & Share AI Prompts"
+    title : "BuG Fixer",
+    description : "Create new Bugs"
 }
 const RootLayout = ({children}) => {
   return (
